@@ -129,7 +129,7 @@ protected:
 			Path playerToIntersection = map->shortestPath(playerPos, playerNextIntersection, ignore);
 			Path playerToGhost = map->shortestPath(playerPos, ghostPos, ignore);
 			Path ghostToIntersection = map->shortestPath(ghostPos, playerNextIntersection, ignore);
-			if (playerToGhost.length <= playerToIntersection.length) {
+			if (playerToGhost.length > 0 && playerToGhost.length <= playerToIntersection.length) {
 				lastGhostDirection = getOpposite(playerToGhost.path.back().dir);
 				return lastGhostDirection;
 			}

@@ -3,7 +3,7 @@ Remake of Pacman using my own game engine, created with SDL2. This project was m
 
 ## Usage notes:
 * Clone.
-* Open VS17 solution file located in the pacman directory.
+* Open VS17 solution file.
 * Build all projects.
 * Run projects.
 * Enjoy.
